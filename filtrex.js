@@ -105,6 +105,9 @@ function filtrexParser() {
                 ['and[^\\w]', 'return "and";'],
                 ['or[^\\w]' , 'return "or";'],
                 ['not[^\\w]', 'return "not";'],
+                ['&&', 'return "and";'],
+                ['\\|\\|' , 'return "or";'],
+                ['\\!', 'return "not";'],
                 ['in[^\\w]', 'return "in";'],
 
                 ['\\s+',  ''], // skip whitespace
